@@ -1,0 +1,75 @@
+body, html {
+  height: 100%;
+  width: 100%;
+
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: sans-serif;
+}
+
+.modeler-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#modeler-container {
+  flex: 1;
+  background:
+  repeating-linear-gradient(
+    transparent,transparent 20px, #86dffa 22px
+  ),
+  repeating-linear-gradient(
+    90deg,
+    transparent,transparent 20px, #86dffa 22px
+  );
+}
+
+#properties-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 5px;
+  overflow-x: auto;
+  overflow-y: auto;
+
+  border-top: solid 2px #CCC;
+  background: #86dffa;
+
+  width: 230px;
+}
+
+.buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.buttons > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.buttons > li > a {
+  background: #86dffa;
+  color: black;
+  border: solid 1px rgb(15, 15, 15);
+  display: inline-block;
+  padding: 5px;
+}
+
+.buttons a {
+  opacity: 0.8;
+}
+
+.buttons a.active {
+  opacity: 1.0;
+}
